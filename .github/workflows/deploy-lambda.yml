@@ -13,6 +13,7 @@ jobs:
           aws-region: us-east-1
       - name: Build project
         run: |
+           chmod +x ./buildspec.yml
            ./buildspec.yml
       - name: lambda_code_update
         run: |
