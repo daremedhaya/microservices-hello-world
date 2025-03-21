@@ -13,7 +13,7 @@ jobs:
           aws-region: us-east-1
       - name: Build project
         run: |
-           ./buildspec.yaml
+           ./buildspec.yml
       - name: lambda_code_update
         run: |
           aws lambda update-function-code --function-name Microservices --zip-file fileb://./deployment_zip/lambda_zip.zip
